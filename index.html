@@ -16,6 +16,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#specialites">Spécialités</a></li>
       <li><a href="#about">À propos</a></li>
+      <li><a href="#menu">La carte</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#horaires">Contact</a></li>
     </ul>
@@ -40,7 +41,7 @@
       </p>
       <div class="hero-actions">
         <a href="tel:+33223070877" class="btn-gold">Commander — 02 23 07 08 77</a>
-        <a href="#specialites" class="btn-ghost">Voir la carte</a>
+        <a href="#menu" class="btn-ghost">Voir la carte</a>
       </div>
     </div>
     <div class="hero-rating">
@@ -57,7 +58,7 @@
   </div>
 
   <section id="specialites">
-    <div class="section-label">Nos spécialités</div>
+    <div class="section-label reveal">Nos spécialités</div>
     <h2 class="section-title">Une carte qui<br/><em style="font-style:italic;color:var(--gold)">fait envie</em></h2>
     <div class="spec-grid">
       <div class="spec-card reveal">
@@ -127,8 +128,430 @@
     <div class="divider-line"></div>
   </div>
 
+
+  <div class="divider">
+    <div class="divider-line"></div>
+    <div class="divider-icon">✦</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <section id="menu">
+    <div class="section-label reveal">La carte complète</div>
+    <h2 class="section-title">Ce qu'on vous<br/><em style="font-style:italic;color:var(--gold)">prépare</em></h2>
+
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" onclick="showTab('sandwichs')">Sandwichs</button>
+      <button class="menu-tab" onclick="showTab('tacos')">Tacos</button>
+      <button class="menu-tab" onclick="showTab('texmex')">Tex Mex</button>
+      <button class="menu-tab" onclick="showTab('salades')">Salades & Assiettes</button>
+      <button class="menu-tab" onclick="showTab('desserts')">Desserts</button>
+      <button class="menu-tab" onclick="showTab('boissons')">Boissons</button>
+    </div>
+
+    <!-- SANDWICHS -->
+    <div class="menu-content active" id="tab-sandwichs">
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Kebab</span>
+            <span class="menu-card-price">6€ / XL 8€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain boulanger ou tortilla, viande de kebab, crudités, sauce au choix</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 7,5€</span>
+            <span>Menu XL 9,5€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Bread Chicken</span>
+            <span class="menu-card-price">7€ / XL 9€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain boulanger ou tortilla, poulet mariné au curry, crudités, sauce au choix</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 7,5€</span>
+            <span>Menu XL 10,5€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Triple Steak</span>
+            <span class="menu-card-price">7,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain, steak haché 45g x3, cheddar, crudités, sauce au choix</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 9€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Panini</span>
+            <span class="menu-card-price">5,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain, kebab ou poulet ou steak ou merguez ou 4 fromages, mozzarella, emmental</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 7€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Cheeseburger</span>
+            <span class="menu-card-price">3,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain, steak haché 45g, cheddar, crudités</p>
+          <div class="menu-card-extras">
+            <span>Double 4,5€</span>
+            <span>Triple 5,5€</span>
+            <span>Menu Simple 5€</span>
+            <span>Menu Double 6€</span>
+            <span>Menu Triple 7€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">O'Korner</span>
+            <span class="menu-card-price">7€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain brioché, viande de kebab, cheddar, crudités, sauce au choix</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 7€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Rösti Burger</span>
+            <span class="menu-card-price">7,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain brioché, steak haché 180g, galette de pomme de terre, bacon, crudités, oignons frits, sauce au choix</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 9€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Chicken Burger</span>
+            <span class="menu-card-price">5,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain brioché, poulet frit, crudités</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 7€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Veggieburger</span>
+            <span class="menu-card-price">7€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain boulanger ou pain burger ou tortilla, galette de légumes ou pomme de terre, crudités, féta, cheddar</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 8,5€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">180</span>
+            <span class="menu-card-price">7,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain boulanger, steak haché 180g, œuf, salade, tomates, oignons, cheddar</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 9€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">360</span>
+            <span class="menu-card-price">8,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Pain boulanger, steak haché 180g x2, salade, tomates, oignons, cheddar</p>
+          <div class="menu-card-extras">
+            <span>Frites +1€</span>
+            <span>Menu (33cl) 10€</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="menu-note">
+        <strong>Nos viandes :</strong> Kebab, Cordons Bleus, Tenders, Poulet, Poulet Pané, Poulet Curry, Nuggets, Poisson Pané, Merguez, Steak Haché<br/>
+        <strong>Nos sauces :</strong> Blanche, Ketchup, Mayonnaise, Andalouse, Algérienne, Biggyburger, Samouraï, Barbecue, Marocaine, Harissa, Miami, Moutarde, Brazil, Poivre, Curry
+      </div>
+    </div>
+
+    <!-- TACOS -->
+    <div class="menu-content" id="tab-tacos">
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Tacos Simple</span>
+            <span class="menu-card-price">7,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Galette, viande au choix, crudités, sauce fromagère et/ou sauce au choix</p>
+          <div class="menu-card-extras">
+            <span>Double 8,5€</span>
+            <span>XL (2 galettes) 9,5€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Menu Simple</span>
+            <span class="menu-card-price">8,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Tacos + boisson 33cl</p>
+          <div class="menu-card-extras">
+            <span>Menu Double 9,5€</span>
+            <span>Menu XL (2 galettes de blé) 10,5€</span>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Menu Enfant</span>
+            <span class="menu-card-price">6€</span>
+          </div>
+          <p class="menu-card-ingredients">Kebab ou cheeseburger (pain, steak haché 45g, cheddar, oignons) ou nuggets + Capri-Sun + Pompotes</p>
+        </div>
+
+      </div>
+      <div class="menu-note">
+        <strong>Nos viandes :</strong> Kebab, Cordons Bleus, Tenders, Poulet, Poulet Pané, Poulet Curry, Nuggets, Poisson Pané, Merguez, Steak Haché<br/>
+        <strong>Nos sauces :</strong> Blanche, Ketchup, Mayonnaise, Andalouse, Algérienne, Biggyburger, Samouraï, Barbecue, Marocaine, Harissa, Miami, Moutarde, Brazil, Poivre, Curry
+      </div>
+    </div>
+
+    <!-- TEX MEX -->
+    <div class="menu-content" id="tab-texmex">
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Frites</span>
+            <span class="menu-card-price">3€ / 4€</span>
+          </div>
+          <p class="menu-card-ingredients">Petite ou Grande</p>
+          <div class="menu-card-extras"><span>Dans le menu : incluses</span></div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Potatoes</span>
+            <span class="menu-card-price">3€ / 4€</span>
+          </div>
+          <p class="menu-card-ingredients">Petite ou Grande</p>
+          <div class="menu-card-extras"><span>Dans le menu +0,5€</span></div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Dippers</span>
+            <span class="menu-card-price">4€ / 5€</span>
+          </div>
+          <p class="menu-card-ingredients">Petite ou Grande</p>
+          <div class="menu-card-extras"><span>Dans le menu +0,5€</span></div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Patates Douces</span>
+            <span class="menu-card-price">4€ / 5€</span>
+          </div>
+          <p class="menu-card-ingredients">Petite ou Grande</p>
+          <div class="menu-card-extras"><span>Dans le menu +1€</span></div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Frites Cheese Oignon Bacon</span>
+            <span class="menu-card-price">4€ / 5€</span>
+          </div>
+          <p class="menu-card-ingredients">Petite ou Grande</p>
+          <div class="menu-card-extras"><span>Dans le menu +1,5€</span></div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Wings</span>
+            <span class="menu-card-price">4,5€ / 7€</span>
+          </div>
+          <p class="menu-card-ingredients">x4 ou x8</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Tenders</span>
+            <span class="menu-card-price">4,5€ / 7€</span>
+          </div>
+          <p class="menu-card-ingredients">x4 ou x8</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Nuggets</span>
+            <span class="menu-card-price">3,5€ / 6€</span>
+          </div>
+          <p class="menu-card-ingredients">x4 ou x8</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">3x3</span>
+            <span class="menu-card-price">6,5€</span>
+          </div>
+          <p class="menu-card-ingredients">Mozza Sticks x3 ou Camembert Bites x3 ou Onions Rings x3 ou Chili Cheese Nuggets x3 ou Jalapeños x3</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SALADES & ASSIETTES -->
+    <div class="menu-content" id="tab-salades">
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Salade</span>
+            <span class="menu-card-price">7€</span>
+          </div>
+          <p class="menu-card-ingredients">Salade, tomates, oignons rouges, oignons frits, féta, poulet pané, sauce vinaigrette</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Assiette Simple / Mixte</span>
+            <span class="menu-card-price">10€ / 12€</span>
+          </div>
+          <p class="menu-card-ingredients">Viande au choix, salade, tomates, oignons rouges, féta, accompagnement, sauce au choix</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Assiette Veggie</span>
+            <span class="menu-card-price">7€</span>
+          </div>
+          <p class="menu-card-ingredients">Galette de légumes, salade, tomates, oignons rouges, accompagnement, féta, sauce au choix</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-content" id="tab-desserts">
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Panini Sucré</span>
+            <span class="menu-card-price">2,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Nutella ou Speculoos</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Tiramisu</span>
+            <span class="menu-card-price">2,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Chocolat ou Fruits Rouges</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Tarte au Daim</span>
+            <span class="menu-card-price">2,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Tarte au Daim</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Glace à l'eau</span>
+            <span class="menu-card-price">2,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Glace à l'eau</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Glace Magnum</span>
+            <span class="menu-card-price">3,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Glace Magnum</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Glace en Pot</span>
+            <span class="menu-card-price">6,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Ben & Jerry's ou Häagen-Dazs</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOISSONS -->
+    <div class="menu-content" id="tab-boissons">
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Soft Drinks 33cl</span>
+            <span class="menu-card-price">1,80€</span>
+          </div>
+          <p class="menu-card-ingredients">Coca-Cola, Fanta, Oasis et autres</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Soft Drinks 50cl</span>
+            <span class="menu-card-price">2,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Coca-Cola, Oasis et autres</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Soft Drinks 1,5L</span>
+            <span class="menu-card-price">3,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Tropico, Coca-Cola et autres</p>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Energy Drinks</span>
+            <span class="menu-card-price">2,50€</span>
+          </div>
+          <p class="menu-card-ingredients">Monster, Burn et autres</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
   <section id="services">
-    <div class="section-label">Nos services</div>
+    <div class="section-label reveal">Nos services</div>
     <h2 class="section-title">Comme vous<br/><em style="font-style:italic;color:var(--gold)">le voulez</em></h2>
     <div class="services-grid">
       <div class="service-card reveal">
@@ -190,37 +613,53 @@
       <div class="section-label">Contact & Adresse</div>
       <h2 class="section-title">Nous<br/><em style="font-style:italic;color:var(--gold)">trouver</em></h2>
       <div class="contact-info reveal reveal-delay-1">
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <div class="contact-label">Adresse</div>
-            <div class="contact-value">5 Rue d'Haigerloch<br/>35530 Noyal-sur-Vilaine</div>
+        <div class="contact-two-cols">
+          <div class="contact-left">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label">Adresse</div>
+                <div class="contact-value">5 Rue d'Haigerloch<br/>35530 Noyal-sur-Vilaine</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label">Téléphone</div>
+                <div class="contact-value"><a href="tel:+33223070877">02 23 07 08 77</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💰</div>
+              <div>
+                <div class="contact-label">Tarifs</div>
+                <div class="contact-value">Gamme modérée (€€)</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">⭐</div>
+              <div>
+                <div class="contact-label">Note moyenne</div>
+                <div class="contact-value">4.6 / 5 — Très bien noté</div>
+              </div>
+            </div>
+            <a href="tel:+33223070877" class="btn-gold" style="margin-top:8px;display:inline-block;">
+              Commander maintenant
+            </a>
+          </div>
+          <div class="maps-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.8!2d-1.5352!3d48.1421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede7a3b2e5555%3A0x1234567890abcdef!2s5+Rue+d'Haigerloch%2C+35530+Noyal-sur-Vilaine!5e0!3m2!1sfr!2sfr!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;filter:grayscale(0.3) contrast(1.1);min-height:300px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="O Korner sur Google Maps">
+            </iframe>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <div class="contact-label">Téléphone</div>
-            <div class="contact-value"><a href="tel:+33223070877">02 23 07 08 77</a></div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">💰</div>
-          <div>
-            <div class="contact-label">Tarifs</div>
-            <div class="contact-value">Gamme modérée (€€)</div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">⭐</div>
-          <div>
-            <div class="contact-label">Note moyenne</div>
-            <div class="contact-value">4.6 / 5 — Très bien noté</div>
-          </div>
-        </div>
-        <a href="tel:+33223070877" class="btn-gold" style="margin-top:8px;display:inline-block;">
-          Commander maintenant
-        </a>
       </div>
     </div>
   </section>
